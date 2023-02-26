@@ -1,0 +1,30 @@
+img{
+    height: 400px;
+    width: 300px;
+
+}
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+
+}
+h1{
+    font-size: 96px;
+    margin: 0%;
+}
+h3{
+    font-size: 32px;
+}
+body{
+    margin: 0px;
+
+}
+table{
+    table-layout: auto;
+    width: 100%;
+    margin: 0%;
+}
+
+.introduction{
+    background-color: #BAD7E9;
+    padding: 7% 3%;
+}
