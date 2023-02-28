@@ -1,30 +1,141 @@
-img{
-    height: 400px;
-    width: 300px;
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 96px;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  font-weight: bolder;
+  padding: 1% 0%;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+}
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+}
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0px;
+}
+div {
+  padding: 3% 0%;
+}
 
+/* INTRO */
+table {
+  table-layout: auto;
+  width: 100%;
+  margin: 0%;
 }
-h1, h2, h3{
-    font-family: 'Montserrat', sans-serif;
+.introduction {
+  background-color: #dcd7c9;
+  padding: 4% 15%;
+}
+.fotoprofil {
+  height: 400px;
+  width: 300px;
+}
+.logo-td {
+  width: 150px;
+  column-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.logo {
+  height: 100px;
+  width: 100px;
+}
 
+/* CARDS */
+.card {
+  border-collapse: separate;
+  border: solid black 1px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 2% auto;
+  text-align: center;
+  -moz-box-shadow: 5px 5px 5px #888;
+  -webkit-box-shadow: 5px 5px 5px #888;
+  box-shadow: 5px 5px 5px #888;
 }
-h1{
-    font-size: 96px;
-    margin: 0%;
+.year-desc {
+  height: 50px;
 }
-h3{
-    font-size: 32px;
+/* EDUCATIONS */
+.Education {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  background-color: #d7c0ae;
+  padding: 2% 0%;
 }
-body{
-    margin: 0px;
 
+.education {
+  background-color: #f4ead5;
+  text-align: left;
+  height: 150px;
 }
-table{
-    table-layout: auto;
-    width: 100%;
-    margin: 0%;
+.education:td .education:th {
+  border-left: solid black 1px;
+  border-top: solid black 1px;
+}
+.education:th {
+  border-top: none;
+}
+.education:td:first-child,
+.education:th:first-child {
+  border-left: none;
 }
 
-.introduction{
-    background-color: #BAD7E9;
-    padding: 7% 3%;
+/* HOBBIES */
+.Hobbies {
+  text-align: center;
+  padding: 2% 2%;
+  background-color: #f9f5e7;
+}
+.card.hobbies {
+  background-color: #eddbc7;
+}
+.hobby-outer {
+  padding-top: 5%;
+}
+/* EXPERIENCE AND ACHIEMENT*/
+.Experience {
+  text-align: center;
+  background-color: #dcd7c9;
+}
+
+.card.expacv {
+  width: 75%;
+  background-color: #f5efe6;
+}
+.expacv .logo-td {
+  max-width: 100%;
+  white-space: nowrap;
+}
+.expacv-desc {
+  width: 400px;
+  height: 120px;
+}
+.card.expacv.last {
+  width: 50%;
+}
+
+/* CONTACTS */
+.Contacts {
+  text-align: center;
+  background-color: #eddbc7;
 }
