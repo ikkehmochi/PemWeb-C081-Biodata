@@ -18,6 +18,22 @@
     <title>Abdurrahman Al Hakim</title>
   </head>
   <body>
+    <?php 
+    $nama_depan = "Abdurrahman";
+    $nama_belakang="Al Hakim";
+    $tanggal_lahir= new DateTime('21.8.2003');
+    $sekarang=new DateTime(date('d.m.y'));
+    $umur_sekarang=$sekarang->diff($tanggal_lahir);
+    $program_studi="Informatika";
+    $universitas="Univeritas Pembangunan Nasional “Veteran” Jawa
+    Timur";
+    $hobi=array("Programming Ringan", "Bermain Game", "Mendengarkan Musik");
+    $riwayat_pendidikan=array("Sekolah Menengah Atas Negeri 9 Surabaya", $universitas);
+    $tahun_pendidikan=array("2019-2021", "2021-Sekarang");
+    $pengalaman_pencapaian=array("Anggota Divisi Acara SONIC 2021", "MC dan Anggota Divisi Acara MOSAIK 2022", "Ketua Divisi Acara FasilkomFest 2022", "Juara 3 UKM Global Languange Club Mini Competition 2022", "Sertifikasi <i>Japanese Languange Profiency Test</i> N5");
+    $pengalaman_pencapaian_year=array("2021", "2022", "2022", "2022");
+
+    ?>
     <section class="introduction">
       <div>
         <table class="intro">
@@ -32,15 +48,14 @@
             <td><h3>Hai!! Kenalin, Aku</h3></td>
           </tr>
           <tr>
-            <td><h1>Abdurrahman Al Hakim</h1></td>
+            <td><h1><?php echo "$nama_depan $nama_belakang,"  ;?></h1></td>
           </tr>
           <tr>
             <td>
               <h3>
-                Panggil saja Hakim. Saya lahir di Gresik pada 21 Agustus 2003.
+                Panggil saja Hakim. Umurku <?php echo $umur_sekarang->format("%y") ;?> tahun.
                 Saat ini saya tengah menempuh jenjang S1 program studi
-                informatika di Univeritas Pembangunan Nasional “Veteran” Jawa
-                Timur.
+                <?php echo "$program_studi di $universitas." ;?> 
               </h3>
             </td>
           </tr>
@@ -64,7 +79,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><h3>Programming Ringan</h3></td>
+                  <td><h3><?php echo $hobi[0];?></h3></td>
                 </tr>
               </table>
             </td>
@@ -76,7 +91,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td><h3>Bermain Game</h3></td>
+                  <td><h3><?php echo $hobi[1];?></h3></td>
                 </tr>
               </table>
             </td>
@@ -86,7 +101,7 @@
                   <td><img src="Photos\music icon.png" alt="Music Icon" /></td>
                 </tr>
                 <tr>
-                  <td><h3>Mendengarkan Musik</h3></td>
+                  <td><h3><?php echo $hobi[2];?></h3></td>
                 </tr>
               </table>
             </td>
@@ -102,10 +117,10 @@
             <td rowspan="2" class="logo-td">
               <img src="Photos\sman 9.png" alt="logo sman 9" class="logo" />
             </td>
-            <td><h3>Sekolah Menengah Atas Negeri 9 Surabaya</h3></td>
+            <td><h3><?php echo $riwayat_pendidikan[0];?></h3></td>
           </tr>
           <tr>
-            <td class="year-desc"><h4>Kelas MIPA (2019-2021)</h4></td>
+            <td class="year-desc"><h4>Kelas MIPA (<?php echo $tahun_pendidikan[0];?>)</h4></td>
           </tr>
         </table>
         <table class="card education">
@@ -114,12 +129,12 @@
               <img src="Photos\upnvjt.png" alt="logo upnvjt" class="logo" />
             </td>
             <td>
-              <h3>Universitas Pembangunan Nasional "Veteran" Jawa Timur</h3>
+              <h3><?php echo $riwayat_pendidikan[1];?></h3>
             </td>
           </tr>
           <tr>
             <td class="year-desc">
-              <h4>Program Studi Informatika (2021-Sekarang)</h4>
+              <h4>Program Studi Informatika (<?php echo $tahun_pendidikan[1];?>)</h4>
             </td>
           </tr>
         </table>
@@ -142,11 +157,11 @@
                     />
                   </td>
                   <td class="expacv-desc">
-                    <h3>Anggota Divisi Acara SONIC 2021</h3>
+                    <h3><?php echo $pengalaman_pencapaian[0] ;?></h3>
                   </td>
                 </tr>
                 <tr>
-                  <td class="year-desc"><h4>2021</h4></td>
+                  <td class="year-desc"><h4><?php echo $pengalaman_pencapaian_year[0] ;?></h4></td>
                 </tr>
               </table>
             </td>
@@ -157,11 +172,11 @@
                     <img src="Photos\mc icon.png" alt="ikon mc" class="logo" />
                   </td>
                   <td class="expacv-desc">
-                    <h3>MC dan Anggota Divisi Acara MOSAIK 2022</h3>
+                    <h3><?php echo $pengalaman_pencapaian[1] ;?></h3>
                   </td>
                 </tr>
                 <tr>
-                  <td class="year-desc"><h4>2022</h4></td>
+                  <td class="year-desc"><h4><?php echo $pengalaman_pencapaian_year[1] ;?></h4></td>
                 </tr>
               </table>
             </td>
@@ -178,11 +193,11 @@
                     />
                   </td>
                   <td class="expacv-desc">
-                    <h3>Ketua Divisi Acara FasilkomFest 2022</h3>
+                    <h3><?php echo $pengalaman_pencapaian[2] ;?></h3>
                   </td>
                 </tr>
                 <tr>
-                  <td class="year-desc"><h4>2022</h4></td>
+                  <td class="year-desc"><h4><?php echo $pengalaman_pencapaian_year[2] ;?></h4></td>
                 </tr>
               </table>
             </td>
@@ -198,13 +213,12 @@
                   </td>
                   <td class="expacv-desc">
                     <h3>
-                      Juara 3 UKM <i>Global Languange Club</i> mini Competition
-                      2022
+                    <?php echo $pengalaman_pencapaian[3] ;?>
                     </h3>
                   </td>
                 </tr>
                 <tr>
-                  <td class="year-desc"><h4>2022</h4></td>
+                  <td class="year-desc"><h4><?php echo $pengalaman_pencapaian_year[3] ;?></h4></td>
                 </tr>
               </table>
             </td>
@@ -216,7 +230,7 @@
               <img src="Photos\japanese icon.png" alt="JLTP N5" class="logo" />
             </td>
             <td class="expacv-desc">
-              <h3>Sertifikasi <i>Japanese Languange Profiency Test</i> N5</h3>
+              <h3><?php echo $pengalaman_pencapaian[4] ;?></h3>
             </td>
           </tr>
         </table>

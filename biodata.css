@@ -35,13 +35,18 @@ div {
 
 /* INTRO */
 table {
-  table-layout: auto;
+  table-layout: initial;
   width: 100%;
-  margin: 0%;
+  /* padding: 0% 3%; */
+  line-height: 1.2;
+}
+.intro td {
+  padding: 0% 3%;
 }
 .introduction {
-  background-color: #dcd7c9;
-  padding: 4% 15%;
+  background-color: #e3fdfd;
+  padding: 4% 10%;
+  font-family: "Montserrat", sans-serif;
 }
 .fotoprofil {
   height: 400px;
@@ -79,14 +84,15 @@ table {
   text-align: center;
   align-items: center;
   align-content: center;
-  background-color: #d7c0ae;
-  padding: 2% 0%;
+  background-color: #a6e3e9;
 }
 
 .education {
-  background-color: #f4ead5;
+  background-color: #71c9ce;
   text-align: left;
   height: 150px;
+  padding: 1% 0%;
+  color: aliceblue;
 }
 .education:td .education:th {
   border-left: solid black 1px;
@@ -104,10 +110,12 @@ table {
 .Hobbies {
   text-align: center;
   padding: 2% 2%;
-  background-color: #f9f5e7;
+  background-color: #cbf1f5;
 }
 .card.hobbies {
-  background-color: #eddbc7;
+  background-color: #71c9ce;
+  color: aliceblue;
+  padding: 3% 0%;
 }
 .hobby-outer {
   padding-top: 5%;
@@ -115,12 +123,13 @@ table {
 /* EXPERIENCE AND ACHIEMENT*/
 .Experience {
   text-align: center;
-  background-color: #dcd7c9;
+  background-color: #71c9ce;
 }
 
 .card.expacv {
   width: 75%;
-  background-color: #f5efe6;
+  background-color: #00adb5;
+  color: aliceblue;
 }
 .expacv .logo-td {
   max-width: 100%;
@@ -129,13 +138,14 @@ table {
 .expacv-desc {
   width: 400px;
   height: 120px;
+  padding-right: 1%;
 }
 .card.expacv.last {
-  width: 50%;
+  width: 35%;
 }
 
 /* CONTACTS */
 .Contacts {
   text-align: center;
-  background-color: #eddbc7;
+  background-color: #4a9094;
 }
